@@ -10,7 +10,7 @@ html, body{
 body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: #fff;
+  color: #050505;
 }
 
 .main{
@@ -58,17 +58,18 @@ body{
 .sidebar{
   width: 260px;
   flex-shrink: 0;
-  background-color: rgba(22, 22, 22, 1);
+  background-color: rgb(255, 252, 252);
   height: 100%;
   overflow: auto;
 }
 
 
 .sidebar-item{
-  padding: .75em 1em;
+  padding: 0.75em 1em;
   display: block;
-  transition: background-color .15s;
-  border-radius: 5px;
+  /* transition: .3s; */
+  /* transition: background-color .15s; */
+  border-radius: 5px; 
 }
 .sidebar-item:hover{
   background-color: rgba(255, 255, 255, .1);
@@ -87,6 +88,16 @@ body{
   cursor: pointer;
   transition: transform .3s;
 }
+
+
+/* .sidebar-item.open > .sidebar-title .toggle-btn{
+  transform: rotate(180deg);
+} */
+
+.sidebar-title .toggle-btn{
+  transform: rotate(180deg);
+}
+
 .sidebar-item.open > .sidebar-title .toggle-btn{
   transform: rotate(180deg);
 }
@@ -95,12 +106,17 @@ body{
   height: 0;
   overflow: hidden;
 }
+ 
 .sidebar-item.open > .sidebar-content{
   height: auto;
 }
 
+/* .sidebar-item.open > .sidebar-content{
+  height: auto;
+} */
+/* ////////////////////////////////////////// */
 .sidebar-item.plain{
-  color: #fff;
+  color: #030303;
   text-decoration: none;
 }
 .sidebar-item.plain:hover{
